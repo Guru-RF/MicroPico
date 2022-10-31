@@ -1,19 +1,14 @@
 import board
 import digitalio
-import analogio
+import adafruit_rgbled
 
-ledTopPico = digitalio.DigitalInOut(board.GP14)
-ledTopPico.direction = digitalio.Direction.OUTPUT
-ledTopPico.value = True
+RGBled1 = adafruit_rgbled.RGBLED(board.GP14, board.GP13, board.GP12, invert_pwm=True)
+RGBled2 = adafruit_rgbled.RGBLED(board.GP3, board.GP4, board.GP5, invert_pwm=True)
 
-ledBottomPico = digitalio.DigitalInOut(board.GP13)
-ledBottomPico.direction = digitalio.Direction.OUTPUT
-ledBottomPico.value = True
+buttonLeft= digitalio.DigitalInOut(board.GP18)
+buttonLeft.direction = digitalio.Direction.INPUT
+buttonLeft.pull = digitalio.Pull.UP
 
-buttonLeftPico = digitalio.DigitalInOut(board.GP18)
-buttonLeftPico.direction = digitalio.Direction.INPUT
-buttonLeftPico.pull = digitalio.Pull.UP
-
-buttonRightPico = digitalio.DigitalInOut(board.GP19)
-buttonRightPico.direction = digitalio.Direction.INPUT
-buttonRightPico.pull = digitalio.Pull.UP
+buttonRight= digitalio.DigitalInOut(board.GP19)
+buttonRight.direction = digitalio.Direction.INPUT
+buttonRight.pull = digitalio.Pull.UP
