@@ -25,13 +25,6 @@ async def buttonTask(cc):
 
 async def buzzerTask():
     while (True):
-#E_FREQ = [ 262,  # C4
-#              294,  # D4
-#              330,  # E4
-#              349,  # F4
-#              392,  # G4
-#              440,  # A4
-#              494 ] # B4
         simpleio.tone(board.GP10, 330, duration=0.25)
         simpleio.tone(board.GP10, 349, duration=0.25)
         simpleio.tone(board.GP10, 392, duration=0.25)
