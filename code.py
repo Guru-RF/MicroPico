@@ -25,9 +25,57 @@ async def buttonTask(cc):
 
 async def buzzerTask():
     while (True):
-	for f in (262, 294, 330, 349, 392, 440, 494, 523):
-		simpleio.tone(board.GP10, f, duration=0.25)
-        await asyncio.sleep(5)
+#E_FREQ = [ 262,  # C4
+#              294,  # D4
+#              330,  # E4
+#              349,  # F4
+#              392,  # G4
+#              440,  # A4
+#              494 ] # B4
+        simpleio.tone(board.GP10, 330, duration=0.25)
+        simpleio.tone(board.GP10, 349, duration=0.25)
+        simpleio.tone(board.GP10, 392, duration=0.25)
+        simpleio.tone(board.GP10, 523, duration=0.5)
+        await asyncio.sleep(0.5)
+        simpleio.tone(board.GP10, 294, duration=0.25)
+        simpleio.tone(board.GP10, 330, duration=0.25)
+        simpleio.tone(board.GP10, 349, duration=0.5)
+        await asyncio.sleep(0.5)
+        simpleio.tone(board.GP10, 392, duration=0.25)
+        simpleio.tone(board.GP10, 440, duration=0.25)
+        simpleio.tone(board.GP10, 494, duration=0.25)
+        simpleio.tone(board.GP10, 698, duration=0.5)
+	await asyncio.sleep(0.5)
+        simpleio.tone(board.GP10, 440, duration=0.25)
+        simpleio.tone(board.GP10, 494, duration=0.25)
+        simpleio.tone(board.GP10, 523, duration=0.5)
+        simpleio.tone(board.GP10, 587, duration=0.5)
+        simpleio.tone(board.GP10, 659, duration=0.5)
+	await asyncio.sleep(0.5)
+        simpleio.tone(board.GP10, 330, duration=0.25)
+        simpleio.tone(board.GP10, 349, duration=0.25)
+        simpleio.tone(board.GP10, 392, duration=0.25)
+        simpleio.tone(board.GP10, 523, duration=0.5)
+        await asyncio.sleep(0.5)
+        simpleio.tone(board.GP10, 294, duration=0.25)
+        simpleio.tone(board.GP10, 330, duration=0.25)
+        simpleio.tone(board.GP10, 349, duration=0.5)
+        await asyncio.sleep(0.5)
+        simpleio.tone(board.GP10, 392, duration=0.25)
+        simpleio.tone(board.GP10, 392, duration=0.25)
+        simpleio.tone(board.GP10, 659, duration=0.5)
+        simpleio.tone(board.GP10, 587, duration=0.5)
+        await asyncio.sleep(0.5)
+        simpleio.tone(board.GP10, 392, duration=0.25)
+        simpleio.tone(board.GP10, 659, duration=0.5)
+        simpleio.tone(board.GP10, 587, duration=0.5)
+        await asyncio.sleep(0.5)
+        simpleio.tone(board.GP10, 392, duration=0.25)
+        simpleio.tone(board.GP10, 659, duration=0.5)
+        simpleio.tone(board.GP10, 587, duration=0.5)
+        simpleio.tone(board.GP10, 523, duration=0.5)
+
+        await asyncio.sleep(120)
 
 async def blinkyTask():
     while (True):
