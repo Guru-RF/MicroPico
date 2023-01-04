@@ -20,7 +20,7 @@ if [ -d "$DIR" ]; then
   echo "done"
 fi
 
-DIR="/Volumes/µPICO"
+DIR="/Volumes/MICROPICO"
 if [ -d "$DIR" ]; then
   echo "Updating demo software in ${DIR}..."
   cp -r lib /Volumes/CIRCUITPY

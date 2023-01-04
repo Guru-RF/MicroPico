@@ -1,7 +1,7 @@
 import os
 import storage
 
-new_name = "µPico"
+new_name = "MicroPico"
 storage.remount("/", readonly=False)
 m = storage.getmount("/")
 m.label = new_name
