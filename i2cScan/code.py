@@ -1,4 +1,3 @@
-import adafruit_bme680
 import time
 import busio
 import board
