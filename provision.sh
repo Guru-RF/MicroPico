@@ -5,7 +5,7 @@ if [ -d "$DIR" ]; then
   echo "Installing firmwire to pico in ${DIR}..."
   cd /tmp
   wget https://downloads.circuitpython.org/bin/raspberry_pi_pico/en_US/adafruit-circuitpython-raspberry_pi_pico-en_US-7.3.3.uf2
-  cp adafruit-circuitpython-raspberry_pi_pico-en_US-7.3.3.uf2 /Volumes/RPI-RP2
+  cp adafruit-circuitpython-raspberry_pi_pico-en_US-8.0.4.uf2 /Volumes/RPI-RP2
   echo "Sleeping 10 seconds for firmware to install"
   cd -
   sleep 10
