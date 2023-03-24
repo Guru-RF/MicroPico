@@ -29,13 +29,17 @@ file = open("localcounter", "r")
 count = int(file.read())
 file.close()
 toggle = False
+port = 1
 while True:
     count = count+1
-    value = str(count) + ',SW,1,' + str(toggle)
+    value = str(count) + ',SW,' + str(port) + ',' + str(toggle)
     if toggle is False:
         toggle = True
     else:
         toggle = False
+        port = port + 1
+    if port is 5:
+        port = 1
     key = '821ccb7eb5157bb2'
     ivs = "aba0a3bde34a03487eda3ec96d5736a8"
     encrypted = EasyCrypt.encrypt_string(key, value, ivs)
@@ -44,16 +48,15 @@ while True:
     rfm9x.send(encrypted)
         
     time_now = time.monotonic()
-    packet = rfm9x.receive(timeout=1)
+    packet = rfm9x.receive(timeout=0.5)
     if packet is not None:
         print("Received (raw): {0}".format(packet))
         decrypted = EasyCrypt.decrypt_string(key, packet, ivs)
         if decrypted is not False:
             print("Received (decrypted): {0}".format(decrypted))
-    sleeptime = max(0, 0.95 - (time.monotonic() - time_now)) 
+    sleeptime = max(0, 0.45 - (time.monotonic() - time_now)) 
     time.sleep(sleeptime)
 
-    time.sleep(2)
 
     
 
