@@ -12,6 +12,26 @@ from adafruit_hid.consumer_control import ConsumerControl
 from adafruit_hid.consumer_control_code import ConsumerControlCode
 from rainbowio import colorwheel
 
+import terminalio
+import displayio
+import busio
+from adafruit_display_text import label
+from adafruit_ssd1351 import SSD1351
+
+# Release any resources currently in use for the displays
+displayio.release_displays()
+
+spi = busio.SPI(board.GP18, board.GP19, board.GP16)
+
+tft_cs = board.GP20
+tft_dc = board.GP21
+
+display_bus = displayio.FourWire(
+    spi, command=tft_dc, chip_select=tft_cs, reset=board.GP22, baudrate=16000000
+)
+
+display = SSD1351(display_bus, width=128, height=128, rotation=0)
+
 
 async def buttonTask(cc):
     while (True):
