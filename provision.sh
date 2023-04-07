@@ -6,9 +6,9 @@ if [ -d "$DIR" ]; then
   cd /tmp
   wget https://downloads.circuitpython.org/bin/raspberry_pi_pico/en_US/adafruit-circuitpython-raspberry_pi_pico-en_US-8.0.4.uf2
   cp adafruit-circuitpython-raspberry_pi_pico-en_US-8.0.4.uf2 /Volumes/RPI-RP2
-  echo "Sleeping 20 seconds for firmware to install"
+  echo "Sleeping 40 seconds for firmware to install"
   cd -
-  sleep 20
+  sleep 40
 fi
 
 DIR="/Volumes/CIRCUITPY"
