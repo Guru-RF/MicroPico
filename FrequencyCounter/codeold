@@ -1,0 +1,18 @@
+import time
+import frequencyio
+import board
+
+frequency = frequencyio.FrequencyIn(board.GP16)
+frequency.capture_period = 15
+time.sleep(0.1)
+
+while True:
+    print(frequency.value)
+
+    # Optional clear() will reset the value
+    # to zero. Without this, if the incoming
+    # signal stops, the last reading will remain
+    # as the value.
+    frequency.clear()
+    time.sleep(2)
+
