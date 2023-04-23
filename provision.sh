@@ -23,7 +23,7 @@ fi
 DIR="/Volumes/MICROPICO"
 if [ -d "$DIR" ]; then
   echo "Updating demo software in ${DIR}..."
-  cp -r lib /Volumes/CIRCUITPY
-  cp *.py /Volumes/CIRCUITPY
+  cp -r lib /Volumes/MICROPICO
+  cp *.py /Volumes/MICROPICO
   echo "done"
 fi
