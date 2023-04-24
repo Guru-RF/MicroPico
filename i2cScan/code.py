@@ -3,7 +3,7 @@ import busio
 import board
 
 # Create the I2C interface.
-i2c = busio.I2C(scl=board.GP21, sda=board.GP20)
+i2c = busio.I2C(scl=board.GP19, sda=board.GP18)
 
 while not i2c.try_lock():
     pass

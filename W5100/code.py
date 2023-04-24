@@ -17,14 +17,14 @@ print("Wiznet5k Ping Test (no DHCP)")
 
 # Setup your network configuration below
 # random MAC, later should change this value on your vendor ID
-MY_MAC = (0x00, 0x01, 0x02, 0x03, 0x04, 0x05)
-IP_ADDRESS = (172, 16, 32, 4)
+MY_MAC = (0x00, 0x03, 0x03, 0x03, 0x04, 0x05)
+IP_ADDRESS = (172, 16, 30, 4)
 SUBNET_MASK = (255, 255, 255, 0)
-GATEWAY_ADDRESS = (172, 16, 32, 1)
+GATEWAY_ADDRESS = (172, 16, 30, 1)
 DNS_SERVER = (8, 8, 8, 8)
 
-led = digitalio.DigitalInOut(board.GP25)
-led.direction = digitalio.Direction.OUTPUT
+#led = digitalio.DigitalInOut(board.GP25)
+#led.direction = digitalio.Direction.OUTPUT
 
 ethernetRst = digitalio.DigitalInOut(W5x00_RSTn)
 ethernetRst.direction = digitalio.Direction.OUTPUT
@@ -53,7 +53,7 @@ print("MAC Address:", [hex(i) for i in eth.mac_address])
 print("My IP address is:", eth.pretty_ip(eth.ip_address))
 
 while True:
-    led.value = not led.value
+#    led.value = not led.value
     time.sleep(1)
 
 print("Done!")
