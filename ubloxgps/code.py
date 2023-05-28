@@ -13,8 +13,8 @@ import analogio
 import rtc
 
 
-RX = board.GP17
-TX = board.GP16
+RX = board.GP5
+TX = board.GP4
 
 uart_gps = busio.UART(TX, RX, baudrate=9600, timeout=1, receiver_buffer_size=128)
 
