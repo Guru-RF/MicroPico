@@ -1,6 +1,6 @@
 # µPico
 
-[PCB](https://shop.rf.guru/products/2023-p-104) µPico PCB
+[RF.Guru µPico PCB]([https://shop.rf.guru/products/2023-p-104](https://shop.rf.guru/products/2022-p-104)) µPico PCB
 
 # µPico Board Hardware
 
