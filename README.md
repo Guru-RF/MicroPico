@@ -10,4 +10,8 @@ Schematic [https://github.com/Guru-RF/MicroPico/hw/schematic.pdf](https://github
 
 # µPico Board Software
 
-in [https://github.com/Guru-RF/MicroPico/src/](https://github.com/Guru-RF/MicroPico/src/) you can find source and lot's of examples
+in https://github.com/Guru-RF/MicroPico/tree/main/src you can find source and lot's of examples
+
+# Picture
+
+![2022-P-104](https://github.com/Guru-RF/MicroPico/assets/1251767/f755fe8c-2a7b-48a5-9a6e-750023fcedb7)
