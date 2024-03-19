@@ -14,4 +14,4 @@ in https://github.com/Guru-RF/MicroPico/tree/main/src you can find source and lo
 
 # Picture
 
-![2022-P-104](https://github.com/Guru-RF/MicroPico/assets/1251767/f755fe8c-2a7b-48a5-9a6e-750023fcedb7)
+![2022-P-104](https://github.com/Guru-RF/MicroPico/assets/1251767/fa6c8aea-e5d1-4249-a8a4-b4638b9a1dca)
