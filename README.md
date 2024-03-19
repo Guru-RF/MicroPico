@@ -4,10 +4,10 @@ RF.Guru µPico PCB https://shop.rf.guru/products/2023-p-104](https://shop.rf.gur
 
 # µPico Board Hardware
 
-in hw/schmatics.pdf you can find the schematics
-in hw/ you can find the bomlist, pick and place and gerber file for the PCB
-in hw/enclosure.stl yuo can find the enclosure
+Schematic https://github.com/Guru-RF/MicroPico/hw/schematic.pdf
+
+(bom, pick and place, gerber and the stl for the enclosure you can find in https://github.com/Guru-RF/MicroPico/hw/)
 
 # µPico Board Software
 
-in src/ you can find source and lot's of examples
+in https://github.com/Guru-RF/MicroPico/src/ you can find source and lot's of examples
