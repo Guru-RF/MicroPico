@@ -12,4 +12,6 @@ Schematic [https://github.com/Guru-RF/MicroPico/hw/schematic.pdf](https://github
 
 # µPico Board Software
 
-in https://github.com/Guru-RF/MicroPico/tree/main/src you can find the sourcecode and lot's of examples
+In https://github.com/Guru-RF/MicroPico/tree/main/src you can find the sourcecode and lot's of examples
+
+The source code of circuitpython and our board defination you can find here: [https://github.com/Guru-RF/circuitpython/tree/rfguru/ports/raspberrypi/boards/rfguru_pico](https://github.com/Guru-RF/circuitpython/tree/rfguru/ports/raspberrypi/boards/rfguru_pico)
