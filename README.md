@@ -8,7 +8,10 @@ RF.Guru µPico PCB [https://shop.rf.guru/products/2023-p-104](https://shop.rf.gu
 
 Schematic [https://github.com/Guru-RF/MicroPico/hw/schematic.pdf](https://github.com/Guru-RF/MicroPico/blob/main/hw/schematic.pdf)
 
-(bom, pick and place, gerber, easyeda link and the stl for the enclosure you can find in https://github.com/Guru-RF/MicroPico/tree/main/hw)
+(bom, pick and place, gerber and the stl for the enclosure you can find in https://github.com/Guru-RF/MicroPico/tree/main/hw)
+
+OSHWlab Link [https://oshwlab.com/rf.guru/2022-k-104-picousbstick](https://oshwlab.com/rf.guru/2022-k-104-picousbstick)
+EasyEDA Link [https://easyeda.com/editor#project_id=c3d13b6168e645f995a63b7762ea83c2](https://easyeda.com/editor#project_id=c3d13b6168e645f995a63b7762ea83c2)
 
 # µPico Board Software
 
