@@ -13,6 +13,3 @@ Schematic [https://github.com/Guru-RF/MicroPico/hw/schematic.pdf](https://github
 # µPico Board Software
 
 in https://github.com/Guru-RF/MicroPico/tree/main/src you can find source and lot's of examples
-
-# Picture
-
