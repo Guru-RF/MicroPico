@@ -16,4 +16,4 @@ OSHWlab Link [https://oshwlab.com/rf.guru/2022-k-104-picousbstick](https://oshwl
 
 In https://github.com/Guru-RF/MicroPico/tree/main/src you can find the sourcecode and lot's of examples
 
-The source code of circuitpython and our board defination you can find here: [https://github.com/Guru-RF/circuitpython/tree/rfguru/ports/raspberrypi/boards/rfguru_pico](https://github.com/Guru-RF/circuitpython/tree/rfguru/ports/raspberrypi/boards/rfguru_pico)
+The source code of circuitpython and our board defination you can find here: [https://github.com/adafruit/circuitpython/tree/main/ports/raspberrypi/boards/rfguru_rp2040](https://github.com/adafruit/circuitpython/tree/main/ports/raspberrypi/boards/rfguru_rp2040)
