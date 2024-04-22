@@ -14,6 +14,7 @@ fi
 DIR="/Volumes/CIRCUITPY"
 if [ -d "$DIR" ]; then
   echo "Install demo software in ${DIR}..."
+  cd src
   cp -r lib /Volumes/CIRCUITPY
   cp *.py /Volumes/CIRCUITPY
   diskutil unmount /Volumes/CIRCUITPY
@@ -23,6 +24,7 @@ fi
 DIR="/Volumes/MICROPICO"
 if [ -d "$DIR" ]; then
   echo "Updating demo software in ${DIR}..."
+  cd src
   cp -r lib /Volumes/MICROPICO
   cp *.py /Volumes/MICROPICO
   echo "done"
